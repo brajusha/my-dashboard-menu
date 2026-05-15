@@ -3,34 +3,46 @@
 <head>
 <style>
   body {
-    font-family: Arial, sans-serif;
-    background-color: transparent; /* Lets the dashboard background show if supported */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
     padding: 20px;
+    display: grid;
+    /* This creates a grid where buttons sit next to each other */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
   }
   .menu-button {
-    display: block;
-    background-color: white;
-    color: #333;
-    padding: 15px 20px;
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #005686; /* A nice professional blue */
+    padding: 20px;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.2s ease-in-out;
+    text-align: center;
   }
   .menu-button:hover {
-    background-color: #f0f0f0;
+    background-color: #005686;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   }
 </style>
 </head>
 <body>
 
-  <!-- Replace the # with your actual destination URLs -->
-  <a href="#" target="_blank" class="menu-button">Amazon Polly</a>
-  <a href="#" target="_blank" class="menu-button">Rise 360</a>
-  <a href="#" target="_blank" class="menu-button">Vyond</a>
-  <a href="#" target="_blank" class="menu-button">Wellsaid Labs</a>
+  <!-- Replace the links inside the quotes after href= -->
+  <a href="https://www.valeo.com/en/" target="_blank" class="menu-button">Valeoy</a>
+
+  
+  <!-- To add a new button, just copy and paste a line like the one below -->
+  <!-- <a href="YOUR_LINK_HERE" target="_blank" class="menu-button">New Tool Name</a> -->
 
 </body>
 </html>
